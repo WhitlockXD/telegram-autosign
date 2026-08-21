@@ -44,6 +44,13 @@ sudo systemctl status tg-signer
 
 ### 环境变量
 
+TG_API_ID和TG_API_HASH建议申请一个自用的
+
+实在没有可以用公开的，容易限流/不可用
+
+TG_API_ID=611335
+TG_API_HASH=d524b414d21f4d37f08684c1df41ac9c
+
 | 变量 | 必填 | 说明 |
 | --- | --- | --- |
 | `TG_API_ID` | Telegram 必填 | Telegram API ID；也可以在 WebUI“运行设置”中配置 |
