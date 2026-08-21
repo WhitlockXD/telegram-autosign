@@ -1,0 +1,19 @@
+[Unit]
+Description=Telegram Signer Node Service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=tg-signer
+Group=tg-signer
+WorkingDirectory=/opt/tg-signer
+EnvironmentFile=/opt/tg-signer/.env
+ExecStart=/usr/bin/node /opt/tg-signer/bootstrap.js
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

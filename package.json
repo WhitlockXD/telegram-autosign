@@ -1,0 +1,23 @@
+{
+  "name": "tg-signer",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Telegram check-in service with optional AI recognition",
+  "scripts": {
+    "start": "node bootstrap.js",
+    "dev": "node --watch server/index.js",
+    "login": "node bootstrap.js login",
+    "test": "node --test",
+    "lint": "node --check bootstrap.js && node --check server/ai.js && node --check server/auth.js && node --check server/bootstrap.js && node --check server/checkin.js && node --check server/config.js && node --check server/history.js && node --check server/index.js && node --check server/login.js && node --check server/scheduler.js && node --check server/security.js && node --check server/settings.js && node --check server/telegram-auth.js && node --check public/app.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.0.1",
+    "helmet": "^8.1.0",
+    "node-cron": "^4.2.1",
+    "openai": "^5.12.2",
+    "teleproto": "^1.228.5"
+  }
+}

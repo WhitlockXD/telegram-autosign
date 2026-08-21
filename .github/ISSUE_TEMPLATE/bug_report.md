@@ -24,10 +24,10 @@ If applicable, add screenshots to help explain your problem.
 **Environment (please complete the following information):**
  - OS: [e.g. macOS, Windows, Linux]
  - tg-signer Version [e.g. 0.1.0]
- - Python Version [e.g. 3.10]
+ - Node.js Version [e.g. 20.19.0]
 
 **Logs**
-Please provide relevant logs. You can find them in the console output or log files.
+Please provide relevant terminal output or WebUI run history. Remove API keys and sessions first.
 ```
 Paste logs here
 ```

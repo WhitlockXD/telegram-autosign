@@ -24,10 +24,10 @@ assignees: ''
 **环境 (Environment):**
  - 操作系统 (OS): [例如 macOS, Windows, Linux]
  - tg-signer 版本 (Version): [例如 0.1.0]
- - Python 版本 (Version): [例如 3.10]
+ - Node.js 版本 (Version): [例如 20.19.0]
 
 **日志 (Logs)**
-请提供相关日志。您可以在控制台输出或日志文件中找到它们。
+请提供终端输出或 WebUI 运行记录中的相关日志，注意删除 API Key 和 Session。
 ```
 在此处粘贴日志
 ```
