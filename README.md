@@ -1,6 +1,6 @@
 # Telegram 签到服务
 
-这是一个只保留 Telegram 签到能力的 Node.js 服务，支持文本、骰子、键盘点击、AI 图片选项识别和 AI 计算题。Telegram 登录、运行设置、签到任务、立即运行和历史记录均可在 Web 控制台中完成。
+基于tg-signer修改而来，功能全部可视化，并且只保留 Telegram 签到能力的 Node.js 服务，支持文本、骰子、键盘点击、AI 图片选项识别和 AI 计算题。Telegram 登录、运行设置、签到任务、立即运行和历史记录均可在 Web 控制台中完成。
 <img width="1920" height="919" alt="image" src="https://github.com/user-attachments/assets/5c133690-ff37-4cd3-983f-62004d9db268" />
 
 
