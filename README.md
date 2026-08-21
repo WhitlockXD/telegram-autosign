@@ -1,6 +1,8 @@
 # Telegram 签到服务
 
 这是一个只保留 Telegram 签到能力的 Node.js 服务，支持文本、骰子、键盘点击、AI 图片选项识别和 AI 计算题。Telegram 登录、运行设置、签到任务、立即运行和历史记录均可在 Web 控制台中完成。
+<img width="1920" height="919" alt="image" src="https://github.com/user-attachments/assets/5c133690-ff37-4cd3-983f-62004d9db268" />
+
 
 ## 直接运行
 
@@ -8,9 +10,13 @@
 
 必须先修改.env,添加TG_AUTH_TOKEN
 
-然后运行
+
+运行命令
+
 node bootstrap.js
+
 默认登录页面
+
 http://IP:8000
 
 服务器安全组或系统防火墙需要放行 TCP 8000 端口。公开监听强制要求在 `.env` 中设置一个足够长的密码，否则服务会拒绝启动：
