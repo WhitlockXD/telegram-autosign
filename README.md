@@ -102,29 +102,10 @@ Telegram session 必须属于有权访问目标聊天的账号。session string 
 - `DELETE /api/configs/:name`：删除任务配置
 - `POST /api/configs/:name/run-once`：立即运行一次签到，返回 `202`
 
-## 配置示例
+## 签到示例
 
-```json
-{
-  "sign_at": "0 6 * * *",
-  "random_seconds": 30,
-  "sign_interval": 1,
-  "chats": [
-    {
-      "chat_id": "@example",
-      "message_thread_id": null,
-      "delete_after": null,
-      "action_interval": 1,
-      "actions": [
-        { "action": 1, "text": "签到" },
-        { "action": 3, "text": "完成签到" }
-      ]
-    }
-  ]
-}
-```
+<img width="1920" height="919" alt="image" src="https://github.com/user-attachments/assets/d877c239-620c-493c-9304-84df613b787e" />
 
-动作编号：`1` 发送文本，`2` 发送骰子，`3` 按文本点击按钮，`4` 使用 OpenAI 图片识别选择按钮，`5` 使用 OpenAI 解答计算题。AI 动作需要网络访问 OpenAI 兼容接口；未配置 AI 时，普通签到仍可运行。
 
 ## 开发检查
 
