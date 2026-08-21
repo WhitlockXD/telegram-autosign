@@ -6,17 +6,12 @@
 
 要求 Node.js 20 或更高版本。服务启动时会自动检查 `package.json` 中的生产依赖；如果 `node_modules` 缺少依赖，会先执行 `npm install --omit=dev`，安装失败则不会启动服务。
 
-```bash
-cp .env.example .env
-# 编辑 .env；公网监听至少填写 TG_AUTH_TOKEN
+必须先修改.env,添加TG_AUTH_TOKEN
+
+然后运行
 node bootstrap.js
-```
-
-`npm start` 执行的是同一条 Node 命令。Node 进程会直接提供 Web 页面和 API，不需要 Nginx、Caddy、Docker 或 Python 运行环境。默认监听 `0.0.0.0:8000`，启动后可以直接打开：
-
-```text
-http://公网IP:8000
-```
+默认登录页面
+http://IP:8000
 
 服务器安全组或系统防火墙需要放行 TCP 8000 端口。公开监听强制要求在 `.env` 中设置一个足够长的密码，否则服务会拒绝启动：
 
